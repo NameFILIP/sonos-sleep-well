@@ -1,0 +1,20 @@
+{
+  "name": "sonos-sleep-well",
+  "version": "1.0.0",
+  "description": "A Sonos watcher which controls a volume of the music",
+  "main": "index.js",
+  "repository": "https://github.com/NameFILIP/sonos-sleep-well.git",
+  "author": "Filip Spiridonov",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "sonos": "^0.14.1"
+  },
+  "scripts": {
+    "start": "node index"
+  }
+}
