@@ -3,7 +3,7 @@ const sonos = require('sonos');
 const threshold = 50;
 const sexySongUri = 'https://ia601506.us.archive.org/16/items/SexySaxMan/SexySaxMan.mp3';
 
-sonos.search((device) => {
+sonos.search(device => {
   console.log(`Watching that device volume is below ${threshold}`);
   global.setInterval(
     () => {
@@ -14,7 +14,7 @@ sonos.search((device) => {
         }
         if (volume > threshold) {
           console.log(`The volume is above the threshold: ${volume}`);
-          device.setVolume(threshold, (error2) => {
+          device.setVolume(threshold, error2 => {
             if (error2) {
               console.error(error2);
               return;
@@ -31,6 +31,6 @@ sonos.search((device) => {
         }
       });
     },
-    10000,
+    10000
   );
 });
