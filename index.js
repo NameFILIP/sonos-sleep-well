@@ -1,8 +1,10 @@
 const sonos = require('sonos');
 
-const threshold = 50;
+const threshold = 30;
 const sexySongUri = 'https://ia601506.us.archive.org/16/items/SexySaxMan/SexySaxMan.mp3';
-
+/*
+ * Make sure the VPN is off
+ */
 sonos.search(device => {
   console.log(`Watching that device volume is below ${threshold}`);
   global.setInterval(
